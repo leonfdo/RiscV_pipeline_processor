@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 31 14:28:05 2023
+# Process ID: 33920
+# Current directory: C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26664 C:\Users\leonf\OneDrive\Documents\pipeline_forward\pipeline\pipeline.xpr
+# Log file: C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/vivado.log
+# Journal file: C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close [ open C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/hazard_unit.sv w ]
+add_files C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/hazard_unit.sv
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/testbench/dut/data_mem_blk/data_in}} 
+current_wave_config {Untitled 1}
+add_wave {{/testbench/dut/data_mem_blk/data_addr}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/testbench/dut/data_mem_blk/memwrt}} 
+relaunch_sim
+open_project C:/Users/leonf/OneDrive/Documents/project/project.xpr
+update_compile_order -fileset sources_1
+current_project pipeline
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+current_project project
+current_project pipeline
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/data_mem_blk/data_in}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/data_mem_blk/memwrt}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/program_count_blk/pc_in}} {{/testbench/dut/program_count_blk/pc_out}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/Instruction_mem_blk/pc}} {{/testbench/dut/Instruction_mem_blk/instruction}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/data_mem_blk/data_addr}} {{/testbench/dut/data_mem_blk/data_in}} {{/testbench/dut/data_mem_blk/memwrt}} {{/testbench/dut/data_mem_blk/memread}} {{/testbench/dut/data_mem_blk/space_sig}} {{/testbench/dut/data_mem_blk/data_out}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/register_blk/register[1]}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/testbench/dut/ex_pipe_blk/ex_reg2_val}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_project project
+close_project
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+open_project C:/Users/leonf/OneDrive/Documents/project/project.xpr
+update_compile_order -fileset sources_1
+current_project pipeline
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+current_project project
+current_project pipeline
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {}
+add_wave {{/testbench/dut/ALU_blk/out}} 
+relaunch_sim
+current_wave_config {}
+add_wave {{/testbench/dut/ALU_blk/reg1}} 
+current_wave_config {}
+add_wave {{/testbench/dut/ALU_blk/reg2}} 
+relaunch_sim
+current_wave_config {}
+add_wave {{/testbench/dut/Mux_blk/input_1}} {{/testbench/dut/Mux_blk/input_2}} {{/testbench/dut/Mux_blk/sig}} {{/testbench/dut/Mux_blk/mux_out}} 
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/testbench/dut/mux3_r2_blk/ex_reg}} {{/testbench/dut/mux3_r2_blk/mem_ALU_out}} {{/testbench/dut/mux3_r2_blk/pc_ALU_out}} {{/testbench/dut/mux3_r2_blk/signal}} {{/testbench/dut/mux3_r2_blk/reg_val}} 
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/testbench/dut/ID_pipe_blk/ex_reg2_val}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/testbench/dut/FPGA_out}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/testbench/dut/data_mem_blk/sw}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+export_ip_user_files -of_objects  [get_files C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/hazard_unit.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/hazard_unit.sv
+current_project project
+close_project
+relaunch_sim
+close_sim

@@ -1,0 +1,1096 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan  1 19:39:05 2024
+# Process ID: 24004
+# Current directory: C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.runs/design_1_Pipeline_wrapper_0_0_synth_1
+# Command line: vivado.exe -log design_1_Pipeline_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Pipeline_wrapper_0_0.tcl
+# Log file: C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.runs/design_1_Pipeline_wrapper_0_0_synth_1/design_1_Pipeline_wrapper_0_0.vds
+# Journal file: C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.runs/design_1_Pipeline_wrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_Pipeline_wrapper_0_0.tcl -notrace
+Command: synth_design -top design_1_Pipeline_wrapper_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4116 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 466.652 ; gain = 103.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_Pipeline_wrapper_0_0' [c:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/bd/design_1/ip/design_1_Pipeline_wrapper_0_0/synth/design_1_Pipeline_wrapper_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_wrapper' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Pipeline_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/datapath.sv:23]
+	Parameter width bound to: 32 - type: integer 
+	Parameter pc_width bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Hazard_detect' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Hazard_detect.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_detect' (1#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Hazard_detect.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'pipe_flush' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/pipe_flush.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'pipe_flush' (2#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/pipe_flush.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Mux.sv:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Mux.sv:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Mux.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (3#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Mux.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'program_count' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/program_count.sv:23]
+	Parameter pc_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'program_count' (4#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/program_count.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (5#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Adder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_mem' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:22]
+	Parameter inst_width bound to: 32 - type: integer 
+	Parameter inst_space bound to: 5 - type: integer 
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[7]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[6]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[5]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[4]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[3]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[2]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[1]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Inst_cache_reg[0]' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-87] always_comb on 'Tag_bits_1_1_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:68]
+WARNING: [Synth 8-87] always_comb on 'Tag_bits_1_0_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:71]
+WARNING: [Synth 8-87] always_comb on 'Flag_bits_1_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:79]
+WARNING: [Synth 8-87] always_comb on 'Tag_bits_0_0_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:97]
+WARNING: [Synth 8-87] always_comb on 'Tag_bits_0_1_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:94]
+WARNING: [Synth 8-87] always_comb on 'Flag_bits_0_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:105]
+WARNING: [Synth 8-3848] Net Inst_mem[31] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[30] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[29] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[28] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[27] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[26] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[25] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[24] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[23] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[22] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[21] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[20] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[19] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[18] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[17] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[16] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[15] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[14] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[13] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+WARNING: [Synth 8-3848] Net Inst_mem[12] in module/entity Instruction_mem does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_mem' (6#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'IF_pipe' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/IF_pipe.sv:23]
+	Parameter inst_width bound to: 32 - type: integer 
+	Parameter pc_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IF_pipe' (7#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/IF_pipe.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/register.sv:23]
+	Parameter addr_width bound to: 5 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter nu_reg bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (8#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Imm_gen' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_gen' (9#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Microprograming' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv:95]
+WARNING: [Synth 8-87] always_comb on 'control_out_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'Microprograming' (10#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ID_pipe' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/ID_pipe.sv:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ID_pipe' (11#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/ID_pipe.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/forwarding_unit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (12#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/forwarding_unit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_3' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Mux_3.sv:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux_3' (13#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Mux_3.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/ALU.sv:23]
+	Parameter width bound to: 32 - type: integer 
+	Parameter op_bits bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (14#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_pipe' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/EX_pipe.sv:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'EX_pipe' (15#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/EX_pipe.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Data_mem' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter addr_space bound to: 5 - type: integer 
+WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:37]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:102]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:106]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:117]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:128]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:137]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:154]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:157]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:167]
+WARNING: [Synth 8-87] always_comb on 'data_out_intermediate_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:67]
+WARNING: [Synth 8-87] always_comb on 'cache_miss_1_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:68]
+WARNING: [Synth 8-87] always_comb on 'cache_miss_0_reg' did not result in combinational logic [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:85]
+INFO: [Synth 8-6155] done synthesizing module 'Data_mem' (16#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'branch_pre' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'branch_pre' (17#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mem_pipe' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/mem_pipe.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mem_pipe' (18#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/mem_pipe.sv:23]
+WARNING: [Synth 8-3848] Net mem_flush in module/entity datapath does not have driver. [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/datapath.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (19#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/datapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_wrapper' (20#1) [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Pipeline_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_Pipeline_wrapper_0_0' (21#1) [c:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/bd/design_1/ip/design_1_Pipeline_wrapper_0_0/synth/design_1_Pipeline_wrapper_0_0.v:58]
+WARNING: [Synth 8-3331] design ID_pipe has unconnected port rst
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[31]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[29]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[28]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[27]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[26]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[25]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[24]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[23]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[22]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[21]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[20]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design Imm_gen has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design Imm_gen has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design Imm_gen has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design Imm_gen has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design Imm_gen has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design IF_pipe has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 537.316 ; gain = 174.094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin mem_pipe_blk:mem_flush to constant 0 [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/datapath.sv:350]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 537.316 ; gain = 174.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 537.316 ; gain = 174.094
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 876.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 876.133 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.570 . Memory (MB): peak = 880.480 ; gain = 4.348
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 880.480 ; gain = 517.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 880.480 ; gain = 517.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 880.480 ; gain = 517.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero_bit0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[31]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[30]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[29]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[28]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[27]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[26]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[25]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[24]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[23]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[22]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[21]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[20]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[19]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[18]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[17]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[16]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[15]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[14]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[13]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[12]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[11]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[10]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[9]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[8]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[7]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[6]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[5]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[4]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[3]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[2]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[1]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[0]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[0]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[1]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Tag_bits_0_0_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:97]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[2]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[3]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Tag_bits_0_1_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:94]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[4]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[5]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Tag_bits_1_0_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:71]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[6]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Inst_cache_reg[7]' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'Tag_bits_1_1_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:68]
+WARNING: [Synth 8-327] inferring latch for variable 'Flag_bits_0_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:105]
+WARNING: [Synth 8-327] inferring latch for variable 'Flag_bits_1_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv:79]
+WARNING: [Synth 8-327] inferring latch for variable 'control_out_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv:96]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:107]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_intermediate_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:67]
+WARNING: [Synth 8-327] inferring latch for variable 'cache_miss_0_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:85]
+WARNING: [Synth 8-327] inferring latch for variable 'cache_miss_1_reg' [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv:68]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 880.480 ; gain = 517.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 85    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 28    
+	   7 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 6     
+	  24 Input     17 Bit        Muxes := 2     
+	  15 Input     17 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 68    
+	  13 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module program_count 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module Instruction_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+Module IF_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module Imm_gen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+Module Microprograming 
+Detailed RTL Component Info : 
++---Muxes : 
+	  24 Input     17 Bit        Muxes := 2     
+	  15 Input     17 Bit        Muxes := 2     
+Module ID_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
+Module forwarding_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 2     
+Module Mux_3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  13 Input      1 Bit        Muxes := 1     
+Module EX_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
+Module Data_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 40    
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   4 Input     32 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   7 Input      1 Bit        Muxes := 1     
+Module branch_pre 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module mem_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.srcs/sources_1/new/ALU.sv:52]
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+INFO: [Synth 8-5545] ROM "data_reg[3]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[31]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[30]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[29]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[28]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[27]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[26]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[25]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[24]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[23]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[22]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[21]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[20]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[19]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[18]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[17]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[16]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[15]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[14]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[13]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[12]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[11]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[10]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[9]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[8]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[7]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[6]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[5]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[4]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[2]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[1]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_reg[0]" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[31]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[29]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[28]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[27]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[26]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[25]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[24]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[23]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[22]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[21]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[20]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design Microprograming has unconnected port instruction[0]
+WARNING: [Synth 8-3331] design IF_pipe has unconnected port rst
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[31]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[30]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[29]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[28]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[27]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[26]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[25]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[24]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[23]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[22]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[21]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[20]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[19]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[18]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[17]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[16]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[15]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[14]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[13]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[12]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[11]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[10]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[9]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[8]
+WARNING: [Synth 8-3331] design Instruction_mem has unconnected port pc[7]
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[15]  is always disabled
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/microprograming/control_out_reg[7]' (LD) to 'inst/datapath_blk/microprograming/control_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/ID_pipe_blk/ex_memread_reg' (FDR) to 'inst/datapath_blk/ID_pipe_blk/ex_alu2mem_sig_reg'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/ex_pipe_blk/mem_memread_reg' (FDR) to 'inst/datapath_blk/ex_pipe_blk/mem_alu2mem_sig_reg'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][15]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][16]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][17]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][18]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][19]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][11]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][25]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][26]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][27]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][28]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][29]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][24]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][31]' (LD) to 'inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /Instruction_mem_blk/\Inst_cache_reg[6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /Instruction_mem_blk/\Inst_cache_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /Instruction_mem_blk/\Inst_cache_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /Instruction_mem_blk/\Inst_cache_reg[0][3] )
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[15]  is always disabled
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /IF_pipr_blk/\instruction_deco_reg[3] )
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[15]  is always disabled
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk /register_blk/\register_reg[16][31] )
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst/datapath_blk /\microprograming/control_out_reg[14]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[0][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[0][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[1][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[1][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[2][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[2][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[3][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[3][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[4][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[4][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[5][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[5][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[6][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[6][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[7][1]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[7][0]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[6][3]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[4][3]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[2][3]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (Inst_cache_reg[0][3]) is unused and will be removed from module Instruction_mem.
+WARNING: [Synth 8-3332] Sequential element (microprograming/control_out_reg[11]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (microprograming/control_out_reg[0]) is unused and will be removed from module datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 880.480 ; gain = 517.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:23 . Memory (MB): peak = 910.688 ; gain = 547.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 914.160 ; gain = 550.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[0][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[1][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[2][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[3][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][22]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][21]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[4][6]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[5][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[6][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/Instruction_mem_blk/Inst_cache_reg[7][7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[15]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[14]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[13]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[12]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[5]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[4]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[3]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/microprograming/control_out_reg[2]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[31]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[30]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[29]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[28]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[27]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[26]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[25]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[24]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[23]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[22]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[21]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[20]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[19]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[18]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[17]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[16]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[15]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[14]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[13]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[12]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[11]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[10]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[9]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[8]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[7]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[6]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[5]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[4]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[3]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[2]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[1]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/datapath_blk/data_mem_blk/data_out_reg[0]) is unused and will be removed from module design_1_Pipeline_wrapper_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/register_blk/register_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/data_mem_blk/data_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/data_mem_blk/data_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/data_mem_blk/data_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/datapath_blk/data_mem_blk/data_reg[3][3] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:24 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:25 . Memory (MB): peak = 927.996 ; gain = 564.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 368 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:09 . Memory (MB): peak = 927.996 ; gain = 221.609
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 927.996 ; gain = 564.773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 927.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+416 Infos, 262 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:30 . Memory (MB): peak = 927.996 ; gain = 578.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 927.996 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.runs/design_1_Pipeline_wrapper_0_0_synth_1/design_1_Pipeline_wrapper_0_0.dcp' has been generated.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 927.996 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/leonf/OneDrive/Documents/pipeline_forward/pipeline/pipeline.runs/design_1_Pipeline_wrapper_0_0_synth_1/design_1_Pipeline_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Pipeline_wrapper_0_0_utilization_synth.rpt -pb design_1_Pipeline_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  1 19:41:00 2024...
